@@ -74,8 +74,8 @@ function handleNotification(data) {
 }
 
 
-const PORT = 3000;
 
-server.listen(PORT, () => {
-    console.log(`Server is listening on ${PORT}`);
+
+server.listen(() => {
+    console.log(`Server is listening`);
 });
