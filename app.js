@@ -60,6 +60,7 @@ function handleMessage(data) {
 function receiveFrameAndSendToFlutter(data) {
     try {
         io.emit('receive from server', data);
+        console.log('Server received live:', data);
     } catch (e) {
         console.error('Error:', e);
     }
